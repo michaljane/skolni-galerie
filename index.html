@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responzivní fotogalerie</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" />
+  </head>
+  <body class="bg-slate-100 text-slate-900">
+    <main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <h1 class="mb-2 text-3xl font-bold tracking-tight text-[rgb(255,0,0)]">Škoní fotogalerie</h1>
+      <p class="mb-8 text-slate-600">8 fotek školy</p>
+
+      <section class="grid grid-cols-1 gap-[10px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola01.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 1" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola01.jpg" alt="Náhodná fotka 1" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola02.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 2" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola02.jpg" alt="Náhodná fotka 2" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola03.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 3" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola03.jpg" alt="Náhodná fotka 3" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola04.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 4" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola04.jpg" alt="Náhodná fotka 4" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola05.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 5" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola05.jpg" alt="Náhodná fotka 5" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola06.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 6" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola06.jpg" alt="Náhodná fotka 6" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola07.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 7" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola07.jpg" alt="Náhodná fotka 7" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="group overflow-hidden rounded-2xl bg-white shadow-sm">
+          <a href="./skola-foto/skola08.jpg" data-lightbox="tailgallery" data-title="Náhodná fotka 8" class="block w-full cursor-zoom-in">
+            <img src="./skola-foto/nahledy-skola08.jpg" alt="Náhodná fotka 8" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+          </a>
+        </figure>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        albumLabel: "Obrázek %1 z %2",
+        wrapAround: true,
+        disableScrolling: true,
+        fadeDuration: 200,
+        imageFadeDuration: 200,
+        resizeDuration: 200,
+      });
+    </script>
+  </body>
+</html>
